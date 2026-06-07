@@ -1,3 +1,4 @@
+
 ;;; -*- lexical-binding: t -*-
 
 (custom-set-variables
@@ -5,8 +6,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-
- '(package-selected-packages '(go-mode multiple-cursors)))
+ '(package-selected-packages '(go-mode multiple-cursors rust-mode)))
 
 
 (add-to-list 'default-frame-alist' `(font . "Iosevka-20"))
@@ -74,11 +74,11 @@
 
 
 ;; Adding /path/to/simpc to load-path so require can find it
-(add-to-list 'load-path "/home/rom/.emacs.d/elpa/")
+;;(add-to-list 'load-path "/home/rom/.emacs.d/simpc-mode/")
 ;; Importing simpc-mode
-(require 'simpc-mode)
+;;(require 'simpc-mode)
 ;; Automatically enabling simpc-mode on files with extensions like .h, .c, .cpp, .hpp
-(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+;;(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 
 
@@ -102,18 +102,26 @@
 
 (set-face-attribute 'font-lock-keyword-face nil :foreground "#00C292" :weight 'bold)
 (set-face-attribute 'line-number nil :foreground "#71CF3A" :weight 'bold)
+
 (set-face-attribute 'font-lock-type-face nil :foreground "#C8E813" :weight 'bold)
 (set-face-attribute 'font-lock-doc-face nil :foreground "#FFFFFF" :weight 'extra-light)
 (set-face-attribute 'font-lock-string-face nil :foreground "#c7d9d1" :weight 'bold)
 (set-face-attribute 'font-lock-function-name-face nil :foreground "#9efa52" :weight 'light)
-(set-face-attribute 'font-lock-builtin-face nil :foreground "#9efa52" :weight 'light)
+(set-face-attribute 'font-lock-builtin-face nil :foreground "#52fa90" :weight 'light)
 (set-face-attribute 'font-lock-comment-face nil :foreground "#6DB094" :weight 'light :slant 'italic)
 (set-face-attribute 'font-lock-preprocessor-face nil :foreground "#1FE090" :weight 'light)
+
 (set-face-attribute 'ido-subdir nil :foreground "#FFFFFF" :weight 'bold)
-(set-face-attribute 'default nil :foreground "#E072B0" :weight 'light)
+(set-face-attribute 'default nil :foreground "#fad82d" :weight 'light)
 
 (set-face-attribute 'region nil :background "#32A2A8" :weight 'light)
 (set-face-attribute 'region nil :foreground "#FFFFFF" :weight 'bold)
 
 (add-to-list 'default-frame-alist '(background-color . "#054D3D"))
 (set-cursor-color "#FFFFFF")
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
