@@ -118,8 +118,11 @@
 (set-face-attribute 'region nil :background "#32A2A8" :weight 'light)
 (set-face-attribute 'region nil :foreground "#FFFFFF" :weight 'bold)
 
-(add-to-list 'default-frame-alist '(background-color . "#054D3D"))
-(set-cursor-color "#FFFFFF")
+(add-to-list 'default-frame-alist '(background-color . "#1d262f"))
+;;(add-to-list 'default-frame-alist '(background-color . "#054D3D"))
+(set-cursor-color "#ffffff")
+;;(set-cursor-color "#c4cdf2")
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
