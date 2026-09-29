@@ -1,4 +1,5 @@
 
+
 ;;; -*- lexical-binding: t -*-
 
 (custom-set-variables
@@ -6,11 +7,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(global-display-line-numbers-mode t)
+ '(menu-bar-mode nil)
  '(org-support-shift-select 'always)
- '(package-selected-packages '(go-mode multiple-cursors rust-mode)))
+ '(package-selected-packages '(go-mode markdown-mode multiple-cursors rust-mode))
+ '(tool-bar-mode nil))
 
 
-(add-to-list 'default-frame-alist' `(font . "Iosevka-20"))
 (global-display-line-numbers-mode 1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
@@ -101,24 +104,25 @@
 
 ;; my theme goes here
 
-(set-face-attribute 'font-lock-keyword-face nil :foreground "#00C292" :weight 'bold)
+(set-face-attribute 'font-lock-keyword-face nil :foreground "#00C292" :weight 'light)
 (set-face-attribute 'line-number nil :foreground "#71CF3A" :weight 'bold)
 
-(set-face-attribute 'font-lock-type-face nil :foreground "#C8E813" :weight 'bold)
-(set-face-attribute 'font-lock-doc-face nil :foreground "#FFFFFF" :weight 'extra-light)
-(set-face-attribute 'font-lock-string-face nil :foreground "#c7d9d1" :weight 'bold)
+(set-face-attribute 'font-lock-type-face nil :foreground "#C8E813" :weight 'light)
+(set-face-attribute 'font-lock-doc-face nil :foreground "#FFFFFF" :weight 'light)
+(set-face-attribute 'font-lock-string-face nil :foreground "#0fdfaf" :weight 'bold)
 (set-face-attribute 'font-lock-function-name-face nil :foreground "#9efa52" :weight 'light)
 (set-face-attribute 'font-lock-builtin-face nil :foreground "#52fa90" :weight 'light)
-(set-face-attribute 'font-lock-comment-face nil :foreground "#6DB094" :weight 'light :slant 'italic)
+(set-face-attribute 'font-lock-comment-face nil :foreground "#71CF3A" :weight 'light  :slant 'italic)
+(set-face-attribute 'font-lock-variable-name-face nil :foreground "#c8d4ec" :weight 'light)
+(set-face-attribute 'font-lock-warning-face nil :foreground "#504038" :weight 'light)
 (set-face-attribute 'font-lock-preprocessor-face nil :foreground "#1FE090" :weight 'light)
 
 (set-face-attribute 'ido-subdir nil :foreground "#FFFFFF" :weight 'bold)
-(set-face-attribute 'default nil :foreground "#fad82d" :weight 'light)
-
+;;(set-face-attribute 'default nil :foreground "#d3b58d" :background "#1d262f" :weight 'light)
+(set-face-attribute 'default nil :foreground "#dfbc90" :background "#1d262f" :weight 'light)
 (set-face-attribute 'region nil :background "#32A2A8" :weight 'light)
-(set-face-attribute 'region nil :foreground "#FFFFFF" :weight 'bold)
 
-(add-to-list 'default-frame-alist '(background-color . "#1d262f"))
+;;(add-to-list 'default-frame-alist '(background-color . "#1d262f"))
 ;;(add-to-list 'default-frame-alist '(background-color . "#054D3D"))
 (set-cursor-color "#ffffff")
 ;;(set-cursor-color "#c4cdf2")
@@ -128,5 +132,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Iosevka Term" :foundry "UKWN" :slant normal :weight bold :height 158 :width normal)))))
-
+ '(default ((t (:family "Consolas" :foundry "MS  " :slant normal :weight regular :height 202 :width normal)))))
